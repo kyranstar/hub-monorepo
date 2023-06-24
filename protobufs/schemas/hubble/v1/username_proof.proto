@@ -1,5 +1,9 @@
 syntax = "proto3";
 
+package hubble.v1;
+
+option go_package = "github.com/kyranstar/hub-monorepo/protos/hubble/v1";
+
 enum UserNameType {
   USERNAME_TYPE_NONE = 0;
   USERNAME_TYPE_FNAME = 1;

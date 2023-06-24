@@ -1,7 +1,11 @@
 syntax = "proto3";
 
-import "message.proto";
-import "id_registry_event.proto";
+package hubble.v1;
+
+option go_package = "github.com/kyranstar/hub-monorepo/protos/hubble/v1";
+
+import "hubble/v1/message.proto";
+import "hubble/v1/id_registry_event.proto";
 
 enum GossipVersion {
   GOSSIP_VERSION_V1 = 0;

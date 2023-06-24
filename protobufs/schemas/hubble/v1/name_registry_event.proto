@@ -1,5 +1,9 @@
 syntax = "proto3";
 
+package hubble.v1;
+
+option go_package = "github.com/kyranstar/hub-monorepo/protos/hubble/v1";
+
 enum NameRegistryEventType {
   NAME_REGISTRY_EVENT_TYPE_NONE = 0;
   NAME_REGISTRY_EVENT_TYPE_TRANSFER = 1;

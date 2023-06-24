@@ -1,5 +1,9 @@
 syntax = "proto3";
 
+package hubble.v1;
+
+option go_package = "github.com/kyranstar/hub-monorepo/protos/hubble/v1";
+
 message HubState {
   uint32 last_eth_block = 1;
   uint64 last_fname_proof = 2;

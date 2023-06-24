@@ -1,7 +1,11 @@
 syntax = "proto3";
 
-import "message.proto";
-import "hub_event.proto";
+package hubble.v1;
+
+option go_package = "github.com/kyranstar/hub-monorepo/protos/hubble/v1";
+
+import "hubble/v1/message.proto";
+import "hubble/v1/hub_event.proto";
 
 message Empty {}
 
